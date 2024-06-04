@@ -1,0 +1,183 @@
+.edit-quantity {
+    display: flex;
+    align-items: center;
+  }
+  
+  .edit-quantity input {
+    margin-right: 8px;
+    width: 0px;
+  }
+  
+  .save-btn, .cancel-btn, .edit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .save-btn:hover, .cancel-btn:hover, .edit-btn:hover {
+    background-color: #007bff;
+  }
+  
+  .prev-btn, .next-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .pagination button {
+    margin-right: 8px;
+  }
+  
+  input::placeholder {
+    color: black;
+    font-size: 19px;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+
+  
+  #filter-icon {
+    color: rgb(42, 110, 218);
+    font-size: 24px;
+  }
+  
+  .input-wrapper {
+    background-color: #f5f0f0;
+    width: 93%;
+    border-radius: 10px;
+    height: 2.5rem;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  
+  input {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-size: 1.25rem;
+    width: 100%;
+    margin-left: 5px;
+  }
+  
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+  
+  }
+  
+  .orders-table th, .orders-table td {
+    padding: 4px 8px; /* Reduce padding to minimize height */
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .orders-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .orders-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .orders-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .orders-table input[type="number"] {
+    width: 50px;
+  }
+  
+  .orders-table .save-btn,
+  .orders-table .cancel-btn,
+  .orders-table .edit-btn {
+    margin: 2px;
+    padding: 2px 4px;
+    font-size: 12px;
+    box-shadow: #6c757d;
+  }
+  
+  .orders-container {
+    padding: 20px;
+  }
+  
+  .input-wrapper {
+    position: relative;
+  }
+  
+  .input-wrapper #search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: rgb(42, 110, 218);
+  }
+  
+  .input-wrapper input {
+    padding-left: 35px;
+  }
+  
+  .hov .dropdown-toggle {
+    width: 100%;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  .pagination .prev-btn,
+  .pagination .next-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .pagination .prev-btn[disabled],
+  .pagination .next-btn[disabled] {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .orders-table th, .orders-table td {
+      padding: 5px;
+    }
+  
+    .input-wrapper input {
+      width: 100%;
+    }
+  
+    .pagination .prev-btn, .pagination .next-btn {
+      padding: 5px 10px;
+    }
+  }
+  
